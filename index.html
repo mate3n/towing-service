@@ -524,7 +524,7 @@
     if(p)p.classList.remove('show');
   }
   window.closePop=closePop;
-  // Show immediately on every page load — no scroll, no session storage
+  // Show immediately on every page load — no cookies, no sessionStorage.
   window.addEventListener('DOMContentLoaded',function(){
     setTimeout(function(){
       var p=document.getElementById('cpop');

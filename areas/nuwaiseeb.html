@@ -28,23 +28,177 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": ["LocalBusiness", "AutoRepair"], "name": "ونش النويصيب — سطحة هيدروليك 57775629", "alternateName": ["Winch Kuwait", "سطحة الكويت", "Towing Service Kuwait", "سحب سيارات الكويت"], "description": "ونش النويصيب سطحة هيدروليك — خدمة سحب سيارات 24 ساعة في النويصيب الأحمدي على رقم 57775629", "telephone": "+96557775629", "url": "https://www.xn----bncrgm6gfj.com/areas/nuwaiseeb.html", "openingHours": "Mo-Su 00:00-24:00", "priceRange": "KWD 5+", "currenciesAccepted": "KWD", "paymentAccepted": "Cash", "image": ["https://ik.imagekit.io/Myupload/towing-service-kuwait-57775629.webp", "https://ik.imagekit.io/Myupload/Winch-near-to-me-full-down.webp", "https://ik.imagekit.io/Myupload/closest-tow-truck-57775629.webp", "https://ik.imagekit.io/Myupload/Car-Towing-Service.webp"], "address": {"@type": "PostalAddress", "addressLocality": "النويصيب", "addressRegion": "الأحمدي", "addressCountry": "KW"}, "geo": {"@type": "GeoCoordinates", "latitude": 28.95, "longitude": 47.98}, "areaServed": {"@type": "Country", "name": "Kuwait"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "347", "bestRating": "5"}, "review": [{"@type": "Review", "author": {"@type": "Person", "name": "أحمد العنزي"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "تعطلت سيارتي في النويصيب ليلاً — اتصلت بـ57775629 ووصلوا في 15 دقيقة. ممتاز.", "datePublished": "2026-05-20"}, {"@type": "Review", "author": {"@type": "Person", "name": "Mohammed Al-Rashidi"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Best towing in Kuwait. Called 57775629 from النويصيب, arrived in 18 min. Zero damage.", "datePublished": "2026-04-15"}], "sameAs": ["https://wa.me/+96557775629"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "ما رقم ونش النويصيب؟", "acceptedAnswer": {"@type": "Answer", "text": "رقم ونش النويصيب هو 57775629 — خدمة سطحة هيدروليك 24 ساعة في النويصيب وجميع محافظات الكويت."}}, {"@type": "Question", "name": "ما هو اقرب ونش من موقعي في النويصيب؟", "acceptedAnswer": {"@type": "Answer", "text": "اتصل على 57775629 وسنرسل أقرب سطحة هيدروليك في النويصيب خلال 10–20 دقيقة."}}, {"@type": "Question", "name": "كم تكلفة ونش السيارة في النويصيب؟", "acceptedAnswer": {"@type": "Answer", "text": "تبدأ من 5 دنانير كويتية. اتصل 57775629 للحصول على سعر فوري قبل إرسال السطحة."}}, {"@type": "Question", "name": "What is towing near me in النويصيب Kuwait?", "acceptedAnswer": {"@type": "Answer", "text": "Call 57775629 — fastest towing in النويصيب Kuwait, 24/7. Flatbed, full-down, battery, fuel."}}, {"@type": "Question", "name": "هل تسحبون السيارات الرياضية والفارهة؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، سطحة فل داون متخصصة للسيارات المنخفضة في النويصيب. اتصل 57775629."}}]}</script>
 <style>
-/* ── Popup ──────────────────────────────────── */
-#cpop{position:fixed;bottom:82px;left:50%;transform:translateX(-50%) translateY(28px);width:calc(100% - 24px);max-width:450px;background:#141414;border:1px solid #2a2a2a;border-radius:18px;box-shadow:0 12px 48px rgba(0,0,0,.8),0 0 0 1px rgba(245,192,0,.08);padding:1rem .95rem .85rem;z-index:700;opacity:0;pointer-events:none;transition:opacity .4s cubic-bezier(.22,1,.36,1), transform .4s cubic-bezier(.22,1,.36,1);will-change:opacity,transform}
-#cpop.show{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0)}
-.pop-close{position:absolute;top:.55rem;left:.65rem;background:rgba(255,255,255,.05);border:none;color:#666;font-size:.85rem;width:24px;height:24px;border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;padding:0}
-.pop-close:hover{color:#aaa;background:rgba(255,255,255,.1)}
-.pop-row{display:flex;align-items:center;gap:.65rem;margin-bottom:.65rem}
-.pop-w-icon{width:40px;height:40px;border-radius:11px;flex-shrink:0;background:linear-gradient(135deg,#b8690a,#f5c000);display:flex;align-items:center;justify-content:center;overflow:hidden}
+/* ── Popup overlay backdrop ── */
+#cpop-backdrop{
+  position:fixed;inset:0;
+  background:rgba(0,0,0,.45);
+  backdrop-filter:blur(3px);
+  -webkit-backdrop-filter:blur(3px);
+  z-index:699;
+  opacity:0;pointer-events:none;
+  transition:opacity .35s ease
+}
+#cpop-backdrop.show{opacity:1;pointer-events:auto}
+
+/* ── Popup card ── */
+#cpop{
+  position:fixed;
+  bottom:88px;
+  left:50%;
+  transform:translateX(-50%) translateY(40px) scale(.95);
+  width:calc(100% - 20px);
+  max-width:448px;
+  background:linear-gradient(145deg,#1a1a1a 0%,#111 100%);
+  border:1px solid rgba(245,192,0,.2);
+  border-radius:20px;
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.9),
+    0 0 0 1px rgba(245,192,0,.1),
+    inset 0 1px 0 rgba(255,255,255,.05);
+  padding:1.1rem 1rem .9rem;
+  z-index:700;
+  opacity:0;
+  pointer-events:none;
+  transition:
+    opacity .4s cubic-bezier(.34,1.56,.64,1),
+    transform .4s cubic-bezier(.34,1.56,.64,1)
+}
+#cpop.show{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateX(-50%) translateY(0) scale(1)
+}
+
+/* ── Shine animation on border ── */
+@keyframes shine{
+  0%{border-color:rgba(245,192,0,.15)}
+  50%{border-color:rgba(245,192,0,.45)}
+  100%{border-color:rgba(245,192,0,.15)}
+}
+#cpop.show{animation:shine 3s ease-in-out infinite}
+
+/* ── X button — RIGHT side ── */
+.pop-close{
+  position:absolute;
+  top:.6rem;
+  right:.7rem;
+  left:auto;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  color:#888;
+  font-size:.8rem;
+  width:26px;height:26px;
+  border-radius:8px;
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  padding:0;
+  transition:all .2s ease;
+  line-height:1
+}
+.pop-close:hover{
+  color:#fff;
+  background:rgba(255,255,255,.12);
+  transform:rotate(90deg)
+}
+
+/* ── Header row ── */
+.pop-row{
+  display:flex;align-items:center;
+  gap:.65rem;
+  margin-bottom:.7rem;
+  padding-left:.1rem
+}
+
+/* ── Icon ── */
+.pop-w-icon{
+  width:42px;height:42px;
+  border-radius:12px;
+  flex-shrink:0;
+  background:linear-gradient(135deg,#b8690a,#f5c000);
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(245,192,0,.3);
+  animation:iconpulse 2.5s ease-in-out infinite
+}
+@keyframes iconpulse{
+  0%,100%{box-shadow:0 4px 12px rgba(245,192,0,.3)}
+  50%{box-shadow:0 4px 20px rgba(245,192,0,.6)}
+}
 .pop-w-icon svg{width:24px;height:24px}
-.pop-live{display:inline-flex;align-items:center;gap:4px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.22);color:#22c55e;font-size:.5rem;font-weight:700;padding:.12rem .45rem;border-radius:50px;margin-bottom:.22rem;letter-spacing:.07em}
-.pop-live-dot{width:5px;height:5px;border-radius:50%;background:#22c55e;animation:pdot 1.1s ease-in-out infinite}
-@keyframes pdot{0%,100%{opacity:1}50%{opacity:.25}}
-.pop-title{font-family:'Cairo',sans-serif;font-size:.82rem;font-weight:900;color:#f0f0f0;line-height:1.2}
-.pop-sub{font-size:.58rem;color:#555;margin-top:.1rem}
-.pop-actions{display:flex;gap:.45rem;margin-bottom:.5rem}
-.pop-btn-call{flex:1;display:flex;align-items:center;justify-content:center;gap:.32rem;background:linear-gradient(135deg,#f5c000,#e8a020);color:#000;font-family:'Cairo',sans-serif;font-weight:900;font-size:.8rem;padding:.6rem .4rem;border-radius:10px;direction:ltr;text-decoration:none;box-shadow:0 3px 12px rgba(245,192,0,.28)}
-.pop-btn-wa{flex:1;display:flex;align-items:center;justify-content:center;gap:.32rem;background:rgba(37,211,102,.07);border:1.5px solid #25d366;color:#25d366;font-family:'Cairo',sans-serif;font-weight:800;font-size:.78rem;padding:.6rem .4rem;border-radius:10px;text-decoration:none}
-.pop-no{display:block;text-align:center;font-size:.54rem;color:#333;cursor:pointer;padding:.1rem}
+
+/* ── Live badge ── */
+.pop-live{
+  display:inline-flex;align-items:center;gap:4px;
+  background:rgba(34,197,94,.12);
+  border:1px solid rgba(34,197,94,.28);
+  color:#22c55e;
+  font-size:.5rem;font-weight:700;
+  padding:.14rem .5rem;
+  border-radius:50px;
+  margin-bottom:.24rem;
+  letter-spacing:.07em
+}
+.pop-live-dot{
+  width:5px;height:5px;
+  border-radius:50%;
+  background:#22c55e;
+  animation:pdot 1.1s ease-in-out infinite
+}
+@keyframes pdot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.25;transform:scale(1.4)}}
+
+.pop-title{
+  font-family:'Cairo',sans-serif;
+  font-size:.84rem;font-weight:900;
+  color:#f0f0f0;line-height:1.2;
+  padding-left:.5rem
+}
+.pop-sub{
+  font-size:.58rem;color:#555;
+  margin-top:.1rem;
+  padding-left:.5rem
+}
+
+/* ── Divider ── */
+.pop-divider{
+  height:1px;
+  background:linear-gradient(to right,transparent,rgba(245,192,0,.2),transparent);
+  margin:.65rem 0
+}
+
+/* ── Action buttons ── */
+.pop-actions{display:flex;gap:.45rem;margin-bottom:.55rem}
+.pop-btn-call{
+  flex:1;
+  display:flex;align-items:center;justify-content:center;gap:.35rem;
+  background:linear-gradient(135deg,#f5c000,#e8920f);
+  color:#000;
+  font-family:'Cairo',sans-serif;font-weight:900;font-size:.82rem;
+  padding:.65rem .4rem;
+  border-radius:12px;
+  direction:ltr;text-decoration:none;
+  box-shadow:0 4px 16px rgba(245,192,0,.35);
+  transition:transform .15s,box-shadow .15s
+}
+.pop-btn-call:active{transform:scale(.97)}
+.pop-btn-wa{
+  flex:1;
+  display:flex;align-items:center;justify-content:center;gap:.35rem;
+  background:rgba(37,211,102,.08);
+  border:1.5px solid #25d366;
+  color:#25d366;
+  font-family:'Cairo',sans-serif;font-weight:800;font-size:.8rem;
+  padding:.65rem .4rem;
+  border-radius:12px;text-decoration:none;
+  transition:background .15s
+}
+.pop-btn-wa:hover{background:rgba(37,211,102,.14)}
+
+.pop-no{
+  display:block;text-align:center;
+  font-size:.54rem;color:#333;
+  cursor:pointer;padding:.1rem;
+  transition:color .2s
+}
 .pop-no:hover{color:#666}
 </style>
 </head>
@@ -329,44 +483,79 @@
 </div>
 
 
+
+</div>
+
+<!-- ── Popup backdrop (click anywhere to close) ── -->
+<div id="cpop-backdrop" onclick="closePop()" aria-hidden="true"></div>
+
+<!-- ── Popup card ── -->
 <div id="cpop" role="dialog" aria-modal="true" aria-label="تواصل معنا">
+  <!-- X on RIGHT side -->
   <button class="pop-close" onclick="closePop()" aria-label="إغلاق">✕</button>
+
   <div class="pop-row">
     <div class="pop-w-icon" aria-hidden="true">
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="24" cy="24" r="24" fill="url(#pg)"/>
-        <defs><radialGradient id="pg" cx="38%" cy="28%" r="72%"><stop offset="0%" stop-color="#ffe066"/><stop offset="100%" stop-color="#b8680a"/></radialGradient></defs>
-        <text x="24" y="32" font-family="Arial Black,sans-serif" font-weight="900" font-size="26" text-anchor="middle" fill="#fff" letter-spacing="-1">W</text>
+        <circle cx="24" cy="24" r="24" fill="url(#pg2)"/>
+        <defs>
+          <radialGradient id="pg2" cx="38%" cy="28%" r="72%">
+            <stop offset="0%" stop-color="#ffe066"/>
+            <stop offset="100%" stop-color="#b8680a"/>
+          </radialGradient>
+        </defs>
+        <text x="24" y="32"
+          font-family="Arial Black,sans-serif"
+          font-weight="900" font-size="24"
+          text-anchor="middle" fill="#fff"
+          letter-spacing="-1">W</text>
       </svg>
     </div>
-    <div class="pop-text-block">
+    <div>
       <div class="pop-live"><span class="pop-live-dot"></span> نعمل الآن · 24 ساعة</div>
       <div class="pop-title">هل تحتاج مساعدة في سحب سيارتك؟</div>
       <div class="pop-sub">نصلك أينما كنت في الكويت · Towing Near Me Kuwait</div>
     </div>
   </div>
+
+  <div class="pop-divider"></div>
+
   <div class="pop-actions">
-    <a class="pop-btn-call" href="tel:+96557775629">📞 <strong>57775629</strong></a>
-    <a class="pop-btn-wa" href="https://wa.me/+96557775629?text=%D8%A3%D8%B1%D9%8A%D8%AF+%D8%AE%D8%AF%D9%85%D8%A9+%D9%88%D9%86%D8%B4" target="_blank" rel="noopener">💬 واتساب</a>
+    <a class="pop-btn-call" href="tel:+96557775629">
+      📞 <strong>57775629</strong>
+    </a>
+    <a class="pop-btn-wa" href="https://wa.me/+96557775629?text=%D8%A3%D8%B1%D9%8A%D8%AF+%D8%AE%D8%AF%D9%85%D8%A9+%D9%88%D9%86%D8%B4" target="_blank" rel="noopener">
+      💬 واتساب
+    </a>
   </div>
+
   <span class="pop-no" onclick="closePop()">لا، شكراً على العرض.</span>
 </div>
+
 <script>
 (function(){
   function closePop(){
-    var p=document.getElementById('cpop');
-    if(p)p.classList.remove('show');
+    var p = document.getElementById('cpop');
+    var b = document.getElementById('cpop-backdrop');
+    if(p) p.classList.remove('show');
+    if(b) b.classList.remove('show');
   }
-  window.closePop=closePop;
-  window.addEventListener('DOMContentLoaded',function(){
-    setTimeout(function(){
-      var p=document.getElementById('cpop');
-      if(p)p.classList.add('show');
-    },1200);
+  function showPop(){
+    var p = document.getElementById('cpop');
+    var b = document.getElementById('cpop-backdrop');
+    if(p) p.classList.add('show');
+    if(b) b.classList.add('show');
+  }
+  window.closePop = closePop;
+  // Close on Escape key
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closePop();
+  });
+  // Show after 1.2s on every page load
+  window.addEventListener('DOMContentLoaded', function(){
+    setTimeout(showPop, 1200);
   });
 })();
 </script>
-
-</div>
 </body>
 </html>

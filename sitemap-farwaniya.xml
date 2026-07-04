@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sitemap: محافظة الفروانية | ونش الكويت https://www.xn----bncrgm6gfj.com -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.xn----bncrgm6gfj.com/khitan/</loc>
@@ -31,4 +30,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+<url><loc>https://www.xn----bncrgm6gfj.com/areas/ardhiya.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://www.xn----bncrgm6gfj.com/areas/omariya.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://www.xn----bncrgm6gfj.com/areas/firdous.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

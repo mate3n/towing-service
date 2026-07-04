@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sitemap: محافظة الأحمدي | ونش الكويت https://www.xn----bncrgm6gfj.com -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.xn----bncrgm6gfj.com/fahaheel/</loc>
@@ -85,4 +84,10 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+<url><loc>https://www.xn----bncrgm6gfj.com/areas/raqqa_south.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://www.xn----bncrgm6gfj.com/areas/ashira.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://www.xn----bncrgm6gfj.com/areas/sharq_ahmadi.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://www.xn----bncrgm6gfj.com/areas/mina_ahmadi.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://www.xn----bncrgm6gfj.com/areas/south_hadiya.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://www.xn----bncrgm6gfj.com/areas/sabah_ahmad_marine.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

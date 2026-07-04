@@ -13,4 +13,3 @@ Sitemap: https://www.xn----bncrgm6gfj.com/sitemap-jahra.xml
 Sitemap: https://www.xn----bncrgm6gfj.com/sitemap-mubarak.xml
 
 Crawl-delay: 1
- 

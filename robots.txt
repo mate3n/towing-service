@@ -2,14 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /seo-report.html
 
-# Sitemaps
-Sitemap: https://www.xn----bncrgm6gfj.com/sitemap_index.xml
-Sitemap: https://www.xn----bncrgm6gfj.com/sitemap-home.xml
-Sitemap: https://www.xn----bncrgm6gfj.com/sitemap-capital.xml
-Sitemap: https://www.xn----bncrgm6gfj.com/sitemap-hawalli.xml
-Sitemap: https://www.xn----bncrgm6gfj.com/sitemap-farwaniya.xml
-Sitemap: https://www.xn----bncrgm6gfj.com/sitemap-ahmadi.xml
-Sitemap: https://www.xn----bncrgm6gfj.com/sitemap-jahra.xml
-Sitemap: https://www.xn----bncrgm6gfj.com/sitemap-mubarak.xml
-
-Crawl-delay: 1
+# Sitemap
+Sitemap: https://www.xn----bncrgm6gfj.com/sitemap.xml

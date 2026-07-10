@@ -1,35 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sitemap Index | ونش الكويت | سطحة هيدروليك | 57775629 -->
-<!-- Total pages: 45 | Total sitemaps: 7 -->
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <sitemap>
-    <loc>https://www.xn----bncrgm6gfj.com/sitemap-home.xml</loc>
-    <lastmod>2026-07-05</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://www.xn----bncrgm6gfj.com/sitemap-capital.xml</loc>
-    <lastmod>2026-07-05</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://www.xn----bncrgm6gfj.com/sitemap-hawalli.xml</loc>
-    <lastmod>2026-07-05</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://www.xn----bncrgm6gfj.com/sitemap-farwaniya.xml</loc>
-    <lastmod>2026-07-05</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://www.xn----bncrgm6gfj.com/sitemap-ahmadi.xml</loc>
-    <lastmod>2026-07-05</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://www.xn----bncrgm6gfj.com/sitemap-jahra.xml</loc>
-    <lastmod>2026-07-05</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://www.xn----bncrgm6gfj.com/sitemap-mubarak.xml</loc>
-    <lastmod>2026-07-05</lastmod>
-  </sitemap>
-
+<sitemap><loc>https://www.xn----bncrgm6gfj.com/sitemap.xml</loc><lastmod>2026-07-10</lastmod></sitemap>
 </sitemapindex>

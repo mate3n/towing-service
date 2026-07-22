@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /seo-report.html
 
-# Sitemap
 Sitemap: https://www.xn----bncrgm6gfj.com/sitemap.xml
